@@ -1,0 +1,142 @@
+/* Header Styles */
+.header {
+    background-color: #fffffffc;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.header h2 {
+   font-size: 1.8rem;
+      font-family: monospace, monospace;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+/* Navigation */
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-buttons a {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+/* Override ONLY the logout button's hover */
+.nav-buttons .logout-btn:hover {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+
+
+/* Default hidden print sections */
+.print-section {
+    display: none;
+}
+
+/* Show on print only */
+@media print {
+    .no-print, .btn, .alert, .form-control, form, .btn-group {
+        display: none !important;
+    }
+
+    .print-section {
+        display: block !important;
+        page-break-after: always;
+    }
+
+    body {
+        font-size: 12px;
+    }
+}
+
+/* Include all your other styles too from the original <style> */
+body {
+    background-color: #caefd4;;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #e8f9f10d;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem; /* or use 3rem for more space */
+}
+
+h3 {
+    font-weight: 600;
+    color: #333;
+}
+
+.alert {
+    font-weight: 500;
+}
+
+.form-select {
+    width: auto;
+}
+
+.table {
+    font-size: 14px;
+    border: 1px solid #e2e2e2;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        margin-top: 20px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+    }
+}

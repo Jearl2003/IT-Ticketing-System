@@ -1,0 +1,127 @@
+body {
+    background-color: #caefd4;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Updated Header */
+.header {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.header h2 {
+   font-size: 1.8rem;
+      font-family: monospace, monospace;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-buttons a {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+/* Override ONLY the logout button's hover */
+.nav-buttons .logout-btn:hover {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.card {
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+table th,
+table td {
+    vertical-align: middle;
+}
+
+.footer {
+    margin-top: 2rem;
+}
+/* Distinct background colors for each card */
+.add-employee-card {
+    background-color: #e8f9f10d; /* light greenish blue */
+    border: 1px solid #b2dfdb;
+}
+
+.employee-list-card {
+    background-color: #f9f9f934; /* soft light gray */
+    border: 1px solid #ddd;
+}
+
+/* Optional: Tweak header style */
+.add-employee-card h5,
+.employee-list-card h5 {
+    font-weight: 700;
+    color: #333;
+}
+     /* Centered popup message style - no background, just text and icon */
+    #success-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000000; /* nice black color */
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        z-index: 1050;
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
+    }
+    #success-popup.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+    /* Checkmark icon style */
+    #success-popup svg {
+        width: 28px;
+        height: 28px;
+        stroke: black;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        flex-shrink: 0;
+    }
